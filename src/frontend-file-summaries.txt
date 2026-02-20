@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for Dashboard, Chat, and Data Upload pages, wrapped with ThemeProvider and Toaster for notifications.",
+  "frontend/src/components/Layout.tsx": "Layout component providing consistent structure with responsive header, collapsible sidebar navigation, and footer with caffeine.ai attribution.",
+  "frontend/src/pages/Dashboard.tsx": "Dashboard page displaying PowerBI-style analytics with metric cards, data visualizations (bar and pie charts), and recent bot configurations list.",
+  "frontend/src/pages/ChatInterface.tsx": "Chat interface page enabling users to interact with the data bot, displaying conversation history with bot avatar and processing user queries against bot configurations.",
+  "frontend/src/pages/DataUpload.tsx": "Data upload page with drag-and-drop file upload functionality using FileReader API to convert files to data URLs, with file validation and progress tracking for CSV, JSON, and Excel files.",
+  "frontend/src/components/MetricCard.tsx": "Reusable metric card component displaying KPIs with icon, value, and trend indicator in corporate emerald/charcoal styling.",
+  "frontend/src/components/DataVisualization.tsx": "Canvas-based data visualization component rendering bar, line, and pie charts using HTML5 Canvas API with emerald color scheme.",
+  "frontend/src/components/ChatMessage.tsx": "Chat message component rendering individual messages with sender identification, timestamp, and distinct styling for user vs bot messages.",
+  "frontend/src/components/DataSourceList.tsx": "Component displaying list of connected data sources with status badges and metadata in card layout.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks managing all backend interactions including queries for data sources and bot configs, plus mutations for adding data sources and creating bot configurations.",
+  "frontend/src/index.css": "Global styles with OKLCH-based corporate color system featuring charcoal and emerald palette, custom scrollbar styling, and utility classes for data analytics theme.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with corporate color palette (charcoal, emerald), custom shadows, professional font stack, and data-focused design tokens."
+}

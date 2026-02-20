@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Charcoal-based palette for professional data analytics */
+        --background: 0.98 0 0;
+        --foreground: 0.18 0.02 240;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.18 0.02 240;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.18 0.02 240;
+        
+        --primary: 0.18 0.02 240;
+        --primary-foreground: 0.98 0 0;
+        
+        --secondary: 0.95 0.01 240;
+        --secondary-foreground: 0.18 0.02 240;
+        
+        --muted: 0.95 0.01 240;
+        --muted-foreground: 0.50 0.01 240;
+        
+        --accent: 0.95 0.01 240;
+        --accent-foreground: 0.18 0.02 240;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.98 0 0;
+        
+        --border: 0.90 0.01 240;
+        --input: 0.90 0.01 240;
+        --ring: 0.50 0.01 240;
+        
+        /* Emerald accent for data insights */
+        --emerald: 0.65 0.15 155;
+        --emerald-light: 0.75 0.12 155;
+        --emerald-foreground: 0.98 0 0;
+        
+        /* Charcoal shades */
+        --charcoal: 0.18 0.02 240;
+        --charcoal-light: 0.25 0.02 240;
+        
+        --chart-1: 0.65 0.15 155;
+        --chart-2: 0.60 0.15 220;
+        --chart-3: 0.55 0.12 280;
+        --chart-4: 0.70 0.18 45;
+        --chart-5: 0.62 0.16 25;
+        
+        --sidebar: 0.98 0 0;
+        --sidebar-foreground: 0.18 0.02 240;
+        --sidebar-primary: 0.18 0.02 240;
+        --sidebar-primary-foreground: 0.98 0 0;
+        --sidebar-accent: 0.95 0.01 240;
+        --sidebar-accent-foreground: 0.18 0.02 240;
+        --sidebar-border: 0.90 0.01 240;
+        --sidebar-ring: 0.50 0.01 240;
+    }
+
+    .dark {
+        --background: 0.12 0.02 240;
+        --foreground: 0.98 0 0;
+        
+        --card: 0.16 0.02 240;
+        --card-foreground: 0.98 0 0;
+        
+        --popover: 0.14 0.02 240;
+        --popover-foreground: 0.98 0 0;
+        
+        --primary: 0.98 0 0;
+        --primary-foreground: 0.18 0.02 240;
+        
+        --secondary: 0.20 0.02 240;
+        --secondary-foreground: 0.98 0 0;
+        
+        --muted: 0.20 0.02 240;
+        --muted-foreground: 0.65 0.01 240;
+        
+        --accent: 0.22 0.02 240;
+        --accent-foreground: 0.98 0 0;
+        
+        --destructive: 0.60 0.20 27;
+        --destructive-foreground: 0.98 0 0;
+        
+        --border: 0.25 0.02 240;
+        --input: 0.25 0.02 240;
+        --ring: 0.50 0.01 240;
+        
+        /* Emerald accent - brighter in dark mode */
+        --emerald: 0.70 0.18 155;
+        --emerald-light: 0.80 0.15 155;
+        --emerald-foreground: 0.12 0.02 240;
+        
+        /* Charcoal shades for dark mode */
+        --charcoal: 0.18 0.02 240;
+        --charcoal-light: 0.25 0.02 240;
+        
+        --chart-1: 0.70 0.18 155;
+        --chart-2: 0.65 0.18 220;
+        --chart-3: 0.60 0.15 280;
+        --chart-4: 0.75 0.20 45;
+        --chart-5: 0.68 0.18 25;
+        
+        --sidebar: 0.14 0.02 240;
+        --sidebar-foreground: 0.98 0 0;
+        --sidebar-primary: 0.70 0.18 155;
+        --sidebar-primary-foreground: 0.12 0.02 240;
+        --sidebar-accent: 0.20 0.02 240;
+        --sidebar-accent-foreground: 0.98 0 0;
+        --sidebar-border: 0.25 0.02 240;
+        --sidebar-ring: 0.50 0.01 240;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        @apply bg-secondary;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        @apply bg-muted-foreground/30 rounded-full;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-muted-foreground/50;
+    }
+}
+
+@layer utilities {
+    .text-emerald {
+        color: oklch(var(--emerald));
+    }
+    
+    .text-emerald-light {
+        color: oklch(var(--emerald-light));
+    }
+    
+    .bg-emerald {
+        background-color: oklch(var(--emerald));
+    }
+    
+    .bg-emerald\/10 {
+        background-color: oklch(var(--emerald) / 0.1);
+    }
+    
+    .bg-emerald\/90 {
+        background-color: oklch(var(--emerald) / 0.9);
+    }
+    
+    .border-emerald {
+        border-color: oklch(var(--emerald));
+    }
+    
+    .border-emerald\/20 {
+        border-color: oklch(var(--emerald) / 0.2);
+    }
+    
+    .border-emerald\/50 {
+        border-color: oklch(var(--emerald) / 0.5);
+    }
+    
+    .bg-charcoal {
+        background-color: oklch(var(--charcoal));
+    }
+    
+    .bg-charcoal-light {
+        background-color: oklch(var(--charcoal-light));
+    }
+    
+    .bg-charcoal\/80 {
+        background-color: oklch(var(--charcoal) / 0.8);
+    }
+}

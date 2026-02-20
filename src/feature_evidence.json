@@ -1,0 +1,87 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-dashboard-interface-to-display-powerbi-style-data-visualizations-including-charts-graphs-and-key-metrics",
+      "featureTitle": "Build a dashboard interface to display PowerBI-style data visualizations including charts, graphs, and key metrics",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/DataVisualization.tsx",
+        "frontend/src/components/MetricCard.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-chat-interface-where-users-can-interact-with-the-bot-to-query-data-and-receive-data-driven-responses",
+      "featureTitle": "Create a chat interface where users can interact with the bot to query data and receive data-driven responses",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ChatMessage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-data-upload-and-import-functionality-allowing-users-to-connect-data-sources-that-the-bot-will-analyze",
+      "featureTitle": "Implement data upload and import functionality allowing users to connect data sources that the bot will analyze",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/DataSourceList.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-professional-data-analytics-focused-visual-theme-with-a-clean-layout-emphasizing-data-clarity-using-a-corporate-color-palette-charcoal-emerald-green-white-with-clear-typography-and-structured-information-hierarchy-suitable-for-business-intelligence-applications",
+      "featureTitle": "Design a professional, data-analytics focused visual theme with a clean layout emphasizing data clarity, using a corporate color palette (charcoal, emerald green, white) with clear typography and structured information hierarchy suitable for business intelligence applications",
+      "files": [
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

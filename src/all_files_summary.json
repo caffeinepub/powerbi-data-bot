@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Main Motoko actor defining data structures (DataSource, AIQuery, BotConfig) and CRUD operations for managing data sources and bot configurations with blob storage mixin.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: dashboard visualizations, chat interface, data upload functionality, and professional analytics-focused UI theme with associated files and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of 12 frontend files describing React components, pages, hooks, and styling for the PowerBI-style data bot application.",
+  "frontend/index.css": "Tailwind CSS base styles with OKLCH color system defining light and dark theme CSS variables for corporate charcoal/emerald palette and UI components.",
+  "frontend/index.html": "HTML entry point with root div and module script reference to main.tsx for the PowerBI Data Bot application.",
+  "frontend/src/App.tsx": "Root React component configuring TanStack Router with three routes (Dashboard, Chat, DataUpload), QueryClient provider, ThemeProvider, and Toaster for notifications.",
+  "frontend/src/components/ChatMessage.tsx": "Chat message component rendering user/bot messages with avatars, timestamps using date-fns, and conditional styling based on sender type.",
+  "frontend/src/components/DataSourceList.tsx": "Card component displaying list of connected data sources with loading skeletons, status badges, and empty state, showing source metadata and external links.",
+  "frontend/src/components/DataVisualization.tsx": "Canvas-based chart component rendering bar, pie, and line charts using HTML5 Canvas API with emerald color scheme and responsive sizing.",
+  "frontend/src/components/Layout.tsx": "Main layout component with responsive header, sidebar navigation (Dashboard, Chat, Data Upload), and footer. Uses TanStack Router for navigation and Sheet component for mobile menu.",
+  "frontend/src/components/MetricCard.tsx": "Reusable card component for displaying metrics with an icon, title, value, optional trend indicator, and loading skeleton state.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and manages the backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context provider and hook for Internet Identity authentication, managing login/logout flow, identity state, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Collection of React Query hooks for fetching and mutating data sources and bot configurations, including queries for lists and individual items plus mutations for adding/creating records.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a charcoal and emerald color scheme for light/dark modes, plus custom scrollbar styling and utility classes.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query client and Internet Identity provider, then renders the root App component.",
+  "frontend/src/pages/ChatInterface.tsx": "Chat interface page with message history and input field that simulates bot responses by matching user queries against configured bot queries from backend data.",
+  "frontend/src/pages/Dashboard.tsx": "Dashboard page component that displays analytics metrics (data sources, bot configs, queries) using MetricCard components and visualizations (bar/pie charts) with data fetched from useGetAllBotConfigs and useGetAllDataSources hooks.",
+  "frontend/src/pages/DataUpload.tsx": "Data upload page component that allows users to upload CSV, JSON, or Excel files via drag-and-drop or file input, validates file types/sizes, converts files to data URLs, and saves them as data sources using the useAddDataSource mutation hook.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining custom color schemes (emerald, charcoal, chart colors), extended theme properties (border radius, shadows, fonts), and plugin integrations for typography, container queries, and animations.",
+  "project_state.json": "Project state file tracking a PowerBI-style data bot application with existing features (dashboard, chat interface, data upload) and pending backend requirements for data models and query processing functions."
+}

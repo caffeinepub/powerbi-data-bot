@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "PowerBI bot that runs on data",
+  "architectural_notes": [
+    "PowerBI integration required"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Bot avatar icon with data analytics theme, geometric design (bot-avatar.dim_128x128.png)\n- Dashboard header background with subtle data visualization pattern (dashboard-header.dim_1200x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-dashboard-interface-to-display-powerbi-style-data-visualizations-including-charts-graphs-and-key-metrics",
+      "title": "Build a dashboard interface to display PowerBI-style data visualizations including charts, graphs, and key metrics",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-chat-interface-where-users-can-interact-with-the-bot-to-query-data-and-receive-data-driven-responses",
+      "title": "Create a chat interface where users can interact with the bot to query data and receive data-driven responses",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-data-upload-and-import-functionality-allowing-users-to-connect-data-sources-that-the-bot-will-analyze",
+      "title": "Implement data upload and import functionality allowing users to connect data sources that the bot will analyze",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-professional-data-analytics-focused-visual-theme-with-a-clean-layout-emphasizing-data-clarity-using-a-corporate-color-palette-charcoal-emerald-green-white-with-clear-typography-and-structured-information-hierarchy-suitable-for-business-intelligence-applications",
+      "title": "Design a professional, data-analytics focused visual theme with a clean layout emphasizing data clarity, using a corporate color palette (charcoal, emerald green, white) with clear typography and structured information hierarchy suitable for business intelligence applications",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a PowerBI bot that runs on data",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create a backend data model to store and manage bot configuration including data sources, query parameters, and bot responses",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement backend functions to process data queries and generate bot responses based on stored data patterns",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "PowerBI Data Bot",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

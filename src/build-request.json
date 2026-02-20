@@ -1,0 +1,136 @@
+{
+  "kind": "build_request",
+  "title": "Create data-driven PowerBI bot",
+  "projectName": "PowerBI Data Bot",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a backend data model to store and manage bot configuration including data sources, query parameters, and bot responses",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "using powerbi create a bot that run by data"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend can store bot configuration data",
+        "Data model supports multiple data source connections",
+        "Configuration includes query parameters and response templates"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement backend functions to process data queries and generate bot responses based on stored data patterns",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "create a bot that run by data"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend can execute data queries",
+        "Bot generates responses based on data patterns",
+        "Results are formatted for frontend consumption"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build a dashboard interface to display PowerBI-style data visualizations including charts, graphs, and key metrics",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "using powerbi"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Dashboard displays data visualizations",
+        "Interface includes charts and graphs",
+        "Key metrics are prominently displayed",
+        "Visualizations update based on bot data processing"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a chat interface where users can interact with the bot to query data and receive data-driven responses",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "create a bot that run by data"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Chat interface allows user input",
+        "Bot responds to data queries",
+        "Conversation history is displayed",
+        "Response includes relevant data insights"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement data upload and import functionality allowing users to connect data sources that the bot will analyze",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "bot that run by data"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can upload data files",
+        "Backend processes and stores uploaded data",
+        "Bot can access and analyze imported data",
+        "Data validation is performed on upload"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Design a professional, data-analytics focused visual theme with a clean layout emphasizing data clarity, using a corporate color palette (charcoal, emerald green, white) with clear typography and structured information hierarchy suitable for business intelligence applications",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Consistent color scheme across all components",
+        "Typography enhances data readability",
+        "Layout prioritizes data visualization and clarity",
+        "Professional appearance suitable for business users"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must use Motoko for backend implementation",
+    "Must use React with TypeScript for frontend",
+    "Cannot integrate external PowerBI services or APIs",
+    "All data processing must happen within the Internet Computer actor"
+  ],
+  "nonGoals": [
+    "Direct integration with Microsoft PowerBI cloud services",
+    "Real-time data streaming from external databases",
+    "Advanced machine learning model training",
+    "Multi-user collaboration features in this initial build"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Bot avatar icon with data analytics theme, geometric design (bot-avatar.dim_128x128.png)",
+      "Dashboard header background with subtle data visualization pattern (dashboard-header.dim_1200x300.png)"
+    ],
+    "edits": []
+  }
+}
